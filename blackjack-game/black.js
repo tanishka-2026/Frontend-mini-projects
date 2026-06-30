@@ -4,18 +4,25 @@ let secondcard=4
 sum= firstcard+secondcard
 console.log(sum)
 
+let hasblackjack=false
+let isAlive= true
+
+let message = ""
 if(sum <= 20)
 {
-    console.log("Do you want to draw a new card?")
+    message = "Do you want to draw a new card?"
 }
 else if (sum===21)
 {
-    console.log("Woohoo! You got Blackjack!")
+    message= "Woohoo! You got Blackjack!"
+    hasblackjack=true
 }
 else
 {
-    console.log("Sorry, you are out of the game! :(")
+    message="Sorry, you are out of the game! :("
+    isAlive = false
 }
+console.log(message)
 
 /*
 let age = 100
