@@ -1,0 +1,79 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Arial, Helvetica, sans-serif;
+
+    /* Green casino felt */
+    background:
+    radial-gradient(circle at center,#2d8b57 0%,#146b3a 55%,#083916 100%);
+}
+
+/* Felt texture */
+body::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background-image:
+    radial-gradient(rgba(183, 154, 154, 0.05) 1px, transparent 1px);
+    background-size:8px 8px;
+    opacity:.35;
+}
+
+/* Card suit pattern */
+body::after{
+    content:"♠ ♥ ♣ ♦   ♠ ♥ ♣ ♦   ♠ ♥ ♣ ♦   ♠ ♥ ♣ ♦";
+    position:absolute;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:130px;
+    color:rgba(255,255,255,.05);
+    letter-spacing:30px;
+    transform:rotate(-20deg);
+    white-space:nowrap;
+}
+
+.table{
+    width:90%;
+    height:85%;
+    border:12px solid #d4af37;
+    border-radius:300px;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding-top:40px;
+
+    background:radial-gradient(circle,#24854f,#16693a);
+
+    box-shadow:
+    inset 0 0 50px rgba(0,0,0,.5),
+    0 25px 60px rgba(0,0,0,.7);
+}
+
+.table::before{
+    content:"";
+    position:absolute;
+    inset:18px;
+    border:3px solid rgba(255,215,0,.5);
+    border-radius:280px;
+}
+
+h1{
+    color:#f8d66d;
+    font-size:30px;
+    letter-spacing:6px;
+    text-shadow:
+        0 2px 8px rgba(0,0,0,.6),
+        0 0 20px rgba(255,215,0,.3);
+}
