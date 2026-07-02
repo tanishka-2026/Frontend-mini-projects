@@ -34,8 +34,51 @@ h1 {
     -webkit-text-fill-color: #FFD863;
 
     text-align: center;
-   -webkit-text-stroke: 1px #070C1A;
+   -webkit-text-stroke: 2px #070C1A;
     text-shadow:
         -1px -1px 2px #FFFEF9,
         0 2px 4px rgba(0,0,0,0.4);
+}
+
+.start-btn{
+    position: relative;
+    width: 220px;          /* Adjust according to your SVG */
+    height: 80px;
+
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.start-btn img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+.start-btn span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+
+    font-family: "Grenze", serif;
+    font-size: 2rem;
+    font-weight: 700;
+
+    color: #FFC416;
+    -webkit-text-stroke: 1px #070C1A;
+
+    pointer-events: none;
+}
+
+.start-btn:hover{
+    transform: scale(1.07);
+    transition: transform 0.2s ease;
+}
+
+.start-btn:active{
+    transform: scale(0.97);
 }
