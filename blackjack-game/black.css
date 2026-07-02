@@ -40,6 +40,13 @@ h1 {
         0 2px 4px rgba(0,0,0,0.4);
 }
 
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust spacing as needed */
+    margin-top: 20px; /* Adjust spacing from the top */
+}
+
 .start-btn{
     position: relative;
     width: 220px;          /* Adjust according to your SVG */
@@ -65,11 +72,11 @@ h1 {
     transform: translate(-50%, -55%);
 
     font-family: "Grenze", serif;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
 
     color: #FFC416;
-    -webkit-text-stroke: 1px #070C1A;
+    -webkit-text-stroke: 0.8px #070C1A;
 
     pointer-events: none;
 }
@@ -80,5 +87,91 @@ h1 {
 }
 
 .start-btn:active{
+    transform: scale(0.97);
+}
+
+.deal-btn{
+    position:relative;          /* Adjust according to your SVG */
+    height: 80px;
+    width:80px;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.deal-btn img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+.deal-btn span{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: "Gudea", sans-serif;
+    font-size:12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: #070C1A 1px 1px 3px;
+
+    color: #fffef9;
+
+    pointer-events: none;
+}
+
+.deal-btn:hover{
+    transform: scale(1.07);
+    transition: transform 0.2s ease;
+}
+
+.deal-btn:active{
+    transform: scale(0.97);
+}
+
+.clear-btn{
+    position:relative;          /* Adjust according to your SVG */
+    height: 80px;
+    width:80px;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.clear-btn img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+.clear-btn span{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: "Gudea", sans-serif;
+    font-size:12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: #070C1A 1px 1px 3px;
+
+    color: #fffef9;
+
+    pointer-events: none;
+}
+
+.clear-btn:hover{
+    transform: scale(1.07);
+    transition: transform 0.2s ease;
+}
+
+.clear-btn:active{
     transform: scale(0.97);
 }
