@@ -554,3 +554,16 @@ h1 {
         transform: scale(1.08);
     }
 }
+.ribbon{
+     position: absolute;
+
+    width: 320px;      /* Adjust as needed */
+    height: auto;
+
+    left: 15%;
+    bottom: 85px;
+
+    transform: translateX(-50%);
+
+    z-index: 12;  
+}
