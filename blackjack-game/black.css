@@ -44,7 +44,7 @@ h1 {
     display: flex;
     justify-content: center;
     gap: 20px; /* Adjust spacing as needed */
-    margin-top: 20px; /* Adjust spacing from the top */
+    margin-top: 15px; /* Adjust spacing from the top */
 }
 
 .start-btn{
