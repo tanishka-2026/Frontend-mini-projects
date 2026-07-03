@@ -557,7 +557,7 @@ h1 {
 .ribbon{
      position: absolute;
 
-    width: 400px;      /* Adjust as needed */
+    width: 500px;      /* Adjust as needed */
     height: auto;
 
     left: 15%;
@@ -575,8 +575,8 @@ h1 {
     align-items: center;
     transform: translate(-50%, -50%);
 
-    font-family: "Gudea", sans-serif;
-    font-size: 1.2rem;
+    font-family: Gudea, "sans-serif";
+    font-size: 3rem;
     white-space: nowrap;
     font-weight: 700;
     letter-spacing: 1px;
