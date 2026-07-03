@@ -557,11 +557,11 @@ h1 {
 .ribbon{
      position: absolute;
 
-    width: 500px;      /* Adjust as needed */
+    width: 350px;      /* Adjust as needed */
     height: auto;
 
     left: 15%;
-    bottom: 85px;
+    bottom: 90px;
 
     transform: translateX(-50%);
 
