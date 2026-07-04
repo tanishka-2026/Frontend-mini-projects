@@ -8,29 +8,30 @@
     <title>Blackjack</title>
     </head>
    <body>
+    
+    <div class="container">
 
-<div class="container">
+       <h1>Blackjack Game</h1>
 
-    <h1>Blackjack Game</h1>
-
-    <div class="buttons">
+          <div class="buttons">
         
-        <div class="clear-btn">
-            <img src="red.svg" alt="clear">
-            <span>Clear</span>
-        </div>
+            <div class="clear-btn">
+              <img src="red.svg" alt="clear">
+              <span>Clear</span>
+            </div>
 
-        <div class="start-btn">
-            <img src="Rectangle 86.svg" alt="start button">
+           <a href="game.html" class="start-btn">
+             <img src="Rectangle 86.svg" alt="Start">
             <span>Start</span>
-        </div>
+           </a>
 
-        <div class="deal-btn">
-            <img src="blue.svg" alt="deal">
-            <span>Deal</span>
-        </div>
+            <div class="deal-btn">
+             <img src="blue.svg" alt="deal">
+             <span>Deal</span>
+            </div>
 
     </div>
+
     <div class="cards-c">
       <div class="cards">
        <img src="card1.svg" alt="cards" class="cards card1">
@@ -83,7 +84,7 @@
 
     <div class="ribbon">
      <img src="ribbon.svg" alt="Ribbon">
-     <span>Don't go over 21!</span>
+     <p id="message-el">Want to play a round?</p>
     </div>
 
 
@@ -92,7 +93,6 @@
 
 </div>
 
-</body>
 
         <script src="black.js"></script>
     </body>
