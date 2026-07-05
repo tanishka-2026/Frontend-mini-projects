@@ -51,7 +51,7 @@ h1 {
     background: transparent;
     padding: 0;
     cursor: pointer;
-    margin-left: 45%;
+    margin-left: 43%;
     margin-top: 3%;
 }
 
@@ -85,4 +85,13 @@ h1 {
 
 .start-button:active{
     transform: scale(0.97);
+}
+
+p{
+    font-family: "Grenze", serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    -webkit-text-stroke: 0.5px #070C1A;
 }
