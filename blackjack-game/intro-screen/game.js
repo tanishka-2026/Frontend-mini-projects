@@ -7,8 +7,9 @@ let isAlive= true
 let message = ""
 let messageEl=document.querySelector("#message-el")
 let sumEl=document.querySelector("#sum-el")
-
-function startGame() {   
+let cardsEl=document.querySelector("#cards-el")
+function startGame() { 
+    cardsEl.textcontent="Cards: "+firstcard+" "+secondcard  
     sumEl.textContent=""+sum
     if(sum <= 20)
     {

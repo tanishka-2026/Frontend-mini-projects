@@ -87,6 +87,96 @@ h1 {
     transform: scale(0.97);
 }
 
+.start-button{
+    position: relative;
+    width: 220px;          /* Adjust according to your SVG */
+    height: 80px;
+
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    margin-left: 43%;
+    margin-top: 3%;
+}
+
+.start-button img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+.start-button span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+
+    font-family: "Grenze", serif;
+    font-size: 3rem;
+    font-weight: 700;
+
+    color: #FFC416;
+    -webkit-text-stroke: 0.8px #070C1A;
+
+    pointer-events: none;
+}
+
+.start-button:hover{
+    transform: scale(1.07);
+    transition: transform 0.2s ease;
+}
+
+.start-button:active{
+    transform: scale(0.97);
+}
+
+.card-button{
+    position: relative;
+    width: 220px;          /* Adjust according to your SVG */
+    height: 80px;
+
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    margin-left: 43%;
+    margin-top: 3%;
+}
+
+.card-button img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+.card-button span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+
+    font-family: "Grenze", serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    white-space: nowrap;
+    color: #FFC416;
+    -webkit-text-stroke: 0.8px #070C1A;
+    
+    pointer-events: none;
+}
+
+.card-button:hover{
+    transform: scale(1.07);
+    transition: transform 0.2s ease;
+}
+
+.card-button:active{
+    transform: scale(0.97);
+}
+
 p{
     font-family: "Grenze", serif;
     font-size: 1.5rem;
