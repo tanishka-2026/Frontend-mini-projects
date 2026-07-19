@@ -19,7 +19,7 @@ let message = "";
 let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el");
-
+v
 function startGame() {
 
     cardsEl.textContent =  cards.join(" ");
@@ -47,7 +47,7 @@ function newCard() {
 
     if (isAlive && !hasBlackJack) {
 
-        let card = 8;
+        let card =4;
 
         cards.push(card);
 
