@@ -23,6 +23,7 @@ v
 function renderGame() {
 
     cardsEl.textContent =  cards[0] + " " + cards[1];
+
     sumEl.textContent = sum;
 
     if (sum <= 20) {
@@ -51,12 +52,10 @@ function newCard() {
 
     if (isAlive && !hasBlackJack) {
 
-        let card =4;
-
-        cards.push(card);
-
+        let card= 8
         sum += card;
-
+        cards.push(card)
+        console.log(card)
         renderGame();
     }
 }
