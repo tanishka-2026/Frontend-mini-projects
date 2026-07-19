@@ -20,9 +20,9 @@ let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el");
 v
-function startGame() {
+function renderGame() {
 
-    cardsEl.textContent =  cards.join(" ");
+    cardsEl.textContent =  cards[0] + " " + cards[1];
     sumEl.textContent = sum;
 
     if (sum <= 20) {
@@ -42,6 +42,10 @@ function startGame() {
 
     messageEl.textContent = message;
 }
+function startGame() {
+
+    renderGame();
+}
 
 function newCard() {
 
@@ -53,6 +57,6 @@ function newCard() {
 
         sum += card;
 
-        startGame();
+        renderGame();
     }
 }
